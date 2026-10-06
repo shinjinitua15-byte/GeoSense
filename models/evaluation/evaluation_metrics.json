@@ -1,0 +1,111 @@
+{
+    "device": "cpu",
+    "validation_samples": 20,
+    "models": {
+        "ResNet-34 U-Net": {
+            "accuracy": 0.8464504942602041,
+            "iou": {
+                "Urban": 0.0,
+                "Vegetation": 0.7921003305287488,
+                "Water": null,
+                "Bare Land": 0.1674454828660436,
+                "Agriculture": 0.6978159825719027
+            },
+            "mean_iou": 0.41434044899167377,
+            "classification_report": "              precision    recall  f1-score   support\n\n       Urban       0.00      0.00      0.00       392\n  Vegetation       0.84      0.94      0.88    521431\n       Water       0.00      0.00      0.00         0\n   Bare Land       0.90      0.17      0.29     30216\n Agriculture       0.86      0.79      0.82    451481\n\n    accuracy                           0.85   1003520\n   macro avg       0.52      0.38      0.40   1003520\nweighted avg       0.85      0.85      0.84   1003520\n",
+            "confusion_matrix": [
+                [
+                    0,
+                    0,
+                    0,
+                    322,
+                    70
+                ],
+                [
+                    0,
+                    489358,
+                    0,
+                    0,
+                    32073
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    76,
+                    0,
+                    5160,
+                    24980
+                ],
+                [
+                    0,
+                    96291,
+                    0,
+                    278,
+                    354912
+                ]
+            ],
+            "confusion_matrix_file": "outputs\\plots\\confusion_matrix_resnet_34_u_net.png"
+        },
+        "ResNet-50 Substitute": {
+            "accuracy": 0.7706941565688775,
+            "iou": {
+                "Urban": 0.0,
+                "Vegetation": 0.674785376910758,
+                "Water": 0.0,
+                "Bare Land": 9.88793671720501e-05,
+                "Agriculture": 0.6115877075190093
+            },
+            "mean_iou": 0.25729439275938787,
+            "classification_report": "              precision    recall  f1-score   support\n\n       Urban       0.00      0.00      0.00       392\n  Vegetation       0.81      0.80      0.81    521431\n       Water       0.00      0.00      0.00         0\n   Bare Land       0.02      0.00      0.00     30216\n Agriculture       0.73      0.79      0.76    451481\n\n    accuracy                           0.77   1003520\n   macro avg       0.31      0.32      0.31   1003520\nweighted avg       0.75      0.77      0.76   1003520\n",
+            "confusion_matrix": [
+                [
+                    0,
+                    1,
+                    0,
+                    0,
+                    391
+                ],
+                [
+                    897,
+                    415879,
+                    9,
+                    90,
+                    104556
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    154,
+                    1902,
+                    0,
+                    3,
+                    28157
+                ],
+                [
+                    934,
+                    92979,
+                    9,
+                    34,
+                    357525
+                ]
+            ],
+            "confusion_matrix_file": "outputs\\plots\\confusion_matrix_resnet_50_substitute.png"
+        }
+    },
+    "better_model_by_mean_iou": "ResNet-34 U-Net",
+    "plots": {
+        "loss_comparison": "outputs\\plots\\training_curves_comparison.png",
+        "accuracy_comparison": "outputs\\plots\\validation_accuracy_comparison.png"
+    }
+}

@@ -5,5 +5,7 @@ __pycache__/
 *.pyc
 data/raw/
 data/shapefiles/
+data/satellite/
 models/saved/
 .pytest_cache/
+data/processed/sentinel.qgz

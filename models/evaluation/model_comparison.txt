@@ -1,0 +1,41 @@
+GeoSense Phase II - Model Comparison
+====================================
+
+Models evaluated:
+1. ResNet-34 U-Net trained from scratch
+2. ResNet-50 substitute fine-tuned using pretrained ImageNet weights
+
+Validation samples:
+20
+
+ResNet-34 U-Net
+--------------
+Validation pixel accuracy:
+84.65%
+
+Mean IoU:
+0.4143
+
+
+ResNet-50 Substitute
+--------------------
+Validation pixel accuracy:
+77.07%
+
+Mean IoU:
+0.2573
+
+
+Model with higher mean IoU:
+ResNet-34 U-Net
+
+Interpretation:
+The comparison indicates which model produced better segmentation
+performance on the same held-out validation samples.
+
+A fine-tuned pretrained model can potentially perform better than
+a model trained from scratch when training data are limited because
+pretrained weights provide previously learned visual features.
+Fine-tuning can therefore start from a stronger representation
+rather than learning all useful features from randomly initialized
+weights.
