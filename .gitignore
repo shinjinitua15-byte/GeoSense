@@ -9,3 +9,24 @@ data/satellite/
 models/saved/
 .pytest_cache/
 data/processed/sentinel.qgz
+# Phase 3 LiDAR and point-cloud data
+*.las
+*.laz
+*.ply
+*.pcd
+
+# Phase 3 street-view imagery and downloaded data
+data/streetview/images/
+data/streetview/results/
+
+# Model checkpoints and generated model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Generated outputs and temporary files
+outputs/
+__pycache__/
+*.pyc
+.pytest_cache/
