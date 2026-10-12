@@ -1,0 +1,15 @@
+# GeoSense Phase III — direct Python dependencies
+# Verified environment: Python 3.11.17
+
+laspy==2.7.0
+numpy==2.4.6
+pandas==3.0.6
+pyproj==3.7.2
+requests==2.34.2
+python-dotenv==1.2.4
+Pillow==12.3.0
+segment-anything==1.0
+transformers==4.46.3
+
+# PyTorch is installed with CUDA 12.1 support in the verified environment.
+# Install the appropriate PyTorch build for your system separately.
