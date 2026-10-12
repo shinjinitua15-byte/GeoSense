@@ -1,0 +1,38 @@
+{
+    "latitude": 45.38575,
+    "longitude": -114.03424,
+    "avg_building_height_m": 14.8,
+    "canopy_cover_pct": 7.81,
+    "impervious_surface_pct": 12.87,
+    "slope_risk_score": 10.0,
+    "scene_composition": {},
+    "walkability_score": null,
+    "bbox_radius_deg": 0.006,
+    "lidar_points_analyzed": 1121805,
+    "streetview_images_analyzed": 0,
+    "streetview_images_used": [],
+    "lidar_bbox": {
+        "min_lat": 45.37975,
+        "min_lon": -114.04024,
+        "max_lat": 45.39175,
+        "max_lon": -114.02824
+    },
+    "phase1_ml_suitability_score": null,
+    "phase1_status": "unavailable: model or prediction output not located",
+    "phase2_imagery_classification": null,
+    "phase2_status": "unavailable: classify_imagery() implementation not located",
+    "phase3_streetview_semantic_analysis": {
+        "available": false,
+        "images_analyzed": 0,
+        "scene_composition": {},
+        "walkability_score": null
+    },
+    "data_quality_notes": [
+        "No street-view images were found near the selected location. Walkability and scene composition are unavailable.",
+        "The available street-view metadata is from Chennai, India, whereas the LiDAR cloud is located in the United States. Only spatially matching observations should be combined.",
+        "Canopy and impervious percentages are point-share proxies from the current heuristic classification, not validated land-area cover estimates.",
+        "Phase 1 ML suitability score was not calculated because its model or actual prediction output was not found.",
+        "Phase 2 imagery classification is unavailable because classify_imagery() was not found in the inspected source files."
+    ],
+    "profile_status": "incomplete"
+}

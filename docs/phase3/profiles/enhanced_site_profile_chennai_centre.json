@@ -1,0 +1,69 @@
+{
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "avg_building_height_m": null,
+    "canopy_cover_pct": null,
+    "impervious_surface_pct": null,
+    "slope_risk_score": null,
+    "scene_composition": {
+        "road": 21.5,
+        "sidewalk": 4.4,
+        "building": 15.2,
+        "vegetation": 17.8,
+        "sky": 11.1,
+        "car": 6.7
+    },
+    "walkability_score": 1.15,
+    "bbox_radius_deg": 0.006,
+    "lidar_points_analyzed": 0,
+    "streetview_images_analyzed": 16,
+    "streetview_images_used": [
+        "1021894136740785.jpg",
+        "1086450688634845.jpg",
+        "1461277598803945.jpg",
+        "1470193411432554.jpg",
+        "1502328051468794.jpg",
+        "1624460951693955.jpg",
+        "1714479173251655.jpg",
+        "182627520798695.jpg",
+        "195857939457228.jpg",
+        "305667797956270.jpg",
+        "461263958277485.jpg",
+        "564584666447974.jpg",
+        "578879473749907.jpg",
+        "580379208438353.jpg",
+        "716729287570536.jpg",
+        "8163485770336111.jpg"
+    ],
+    "lidar_bbox": {
+        "min_lat": 13.0767,
+        "min_lon": 80.2647,
+        "max_lat": 13.088700000000001,
+        "max_lon": 80.2767
+    },
+    "phase1_ml_suitability_score": null,
+    "phase1_status": "unavailable: model or prediction output not located",
+    "phase2_imagery_classification": null,
+    "phase2_status": "unavailable: classify_imagery() implementation not located",
+    "phase3_streetview_semantic_analysis": {
+        "available": true,
+        "images_analyzed": 16,
+        "scene_composition": {
+            "road": 21.5,
+            "sidewalk": 4.4,
+            "building": 15.2,
+            "vegetation": 17.8,
+            "sky": 11.1,
+            "car": 6.7
+        },
+        "walkability_score": 1.15
+    },
+    "data_quality_notes": [
+        "No LiDAR points were found in this bounding box. LiDAR metrics are null because no measurements are available.",
+        "The available street-view metadata is from Chennai, India, whereas the LiDAR cloud is located in the United States. Only spatially matching observations should be combined.",
+        "Canopy and impervious percentages are point-share proxies from the current heuristic classification, not validated land-area cover estimates.",
+        "Phase 1 ML suitability score was not calculated because its model or actual prediction output was not found.",
+        "Phase 2 imagery classification is unavailable because classify_imagery() was not found in the inspected source files."
+    ],
+    "profile_status": "incomplete"
+}
