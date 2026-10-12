@@ -90,9 +90,9 @@
 
 \- \[x] Two example JSON profiles and their explanatory README committed and pushed.
 
-\- \[ ] Complete at least five meaningful Phase III commits.
+\- \[x] Complete at least five meaningful Phase III commits.
 
-\- \[ ] Review final repository status and portfolio documentation.
+\- \[x] Review final repository status and portfolio documentation.
 
 
 
