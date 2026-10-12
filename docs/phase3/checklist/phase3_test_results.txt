@@ -1,0 +1,20 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.17, pytest-9.1.1, pluggy-1.6.0 -- D:\GeoSense_Phase3\geosense_lidar\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\shinj
+plugins: anyio-4.15.1, dash-4.4.1, platformdirs-4.12.4
+collecting ... collected 11 items
+
+::test_lidar_classify_points_returns_labels PASSED                       [  9%]
+::test_slope_risk_with_fewer_than_two_points PASSED                      [ 18%]
+::test_slope_risk_is_capped_at_ten PASSED                                [ 27%]
+::test_slope_risk_for_constant_elevation PASSED                          [ 36%]
+::test_enhanced_site_profile_fields PASSED                               [ 45%]
+::test_build_profile_rejects_invalid_latitude PASSED                     [ 54%]
+::test_build_profile_rejects_invalid_longitude PASSED                    [ 63%]
+::test_build_profile_rejects_nonpositive_radius PASSED                   [ 72%]
+::test_walkability_score_is_nonnegative PASSED                           [ 81%]
+::test_walkability_score_is_capped_at_ten PASSED                         [ 90%]
+::test_walkability_empty_composition PASSED                              [100%]
+
+============================= 11 passed in 6.07s ==============================
